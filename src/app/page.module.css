@@ -7,6 +7,21 @@
   min-height: 100vh;
 }
 
+.navigator {
+  background: #202123;
+  width: 13rem;
+}
+
+.main {
+  background: #353740;
+  width: 100%;
+}
+
+.flex_root {
+  display: flex;
+  flex-direction: column;
+}
+
 .description {
   display: inherit;
   justify-content: inherit;
@@ -97,7 +112,7 @@
 
 .center::before,
 .center::after {
-  content: '';
+  content: "";
   left: 50%;
   position: absolute;
   filter: blur(45px);
@@ -125,7 +140,7 @@
 
 .thirteen::before,
 .thirteen::after {
-  content: '';
+  content: "";
   position: absolute;
   z-index: -1;
 }
