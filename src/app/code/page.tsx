@@ -2,7 +2,11 @@
 import styles from "./code.module.css";
 import Image from "next/image";
 const Input = () => {
-  return <div></div>;
+  return (
+    <div>
+      <input></input>
+    </div>
+  );
 };
 
 const exampleCode = `\`\`\`
@@ -13,14 +17,6 @@ import ReactDom from 'react-dom'
 ReactDom.render(<ReactMarkdown># Hello, *world*!</ReactMarkdown>, document.body)
 \`\`\`
 `;
-
-export function BottomForm() {
-  return (
-    <div>
-      <Input></Input>
-    </div>
-  );
-}
 
 export const Main: React.FC = () => {
   return (
@@ -72,6 +68,9 @@ export const Main: React.FC = () => {
           </div>
         </div>
       </div>
+      <div className={styles.input_frame}>
+        <Input></Input>
+      </div>
     </div>
   );
 };
@@ -79,12 +78,7 @@ export const Main: React.FC = () => {
 export default function Code() {
   return (
     <div className="h-full">
-      <div className="h-5/6">
-        <Main></Main>
-      </div>
-      <div className="h-1/6">
-        <BottomForm></BottomForm>
-      </div>
+      <Main></Main>
     </div>
   );
 }

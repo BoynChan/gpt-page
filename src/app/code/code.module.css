@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 3rem;
 }
 
 .code {
@@ -49,4 +48,11 @@
   margin-right: auto;
   padding-left: 3%;
   padding-right: 3%;
+}
+
+.input_frame {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
 }
